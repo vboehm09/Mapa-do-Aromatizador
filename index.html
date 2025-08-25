@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa do Aromatizador</title>
+    <link rel="stylesheet" href="/assets/styles/styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mapa do Aromatizador</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#">Guia de Ocasiões</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="aroma-map">
+            <h2>Descubra seu Aroma Perfeito</h2>
+            <p>Clique em um aroma para explorar suas combinações!</p>
+            <div class="map-container">
+                <svg id="aroma-svg-map" viewBox="0 0 800 600">
+                    <circle class="aroma-point" cx="200" cy="300" r="40" fill="#f0c05a" data-aroma="laranja" />
+                    <circle class="aroma-point" cx="450" cy="150" r="40" fill="#a4d4b1" data-aroma="hortela" />
+                    <circle class="aroma-point" cx="600" cy="400" r="40" fill="#b0c0e0" data-aroma="lavanda" />
+                    </svg>
+            </div>
+            
+            <div id="aroma-details" class="hidden">
+                <h3>Combinações para <span id="aroma-name"></span></h3>
+                <p id="aroma-info">Detalhes da combinação aparecerão aqui.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mapa do Aromatizador. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
